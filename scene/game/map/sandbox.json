@@ -1,0 +1,206 @@
+{ "backgroundcolor":"#ffffff",
+ "height":45,
+ "layers":[
+       
+        
+        {
+         "draworder":"topdown",
+         "height":40,
+         "name":"ground",
+         "objects":[
+                {
+                 "gid":31,
+                 "height":250,
+                 "id":2,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"float"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":0,
+                 "y":1087
+                }, 
+                {
+                 "gid":31,
+                 "height":200,
+                 "id":3,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"float"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":256,
+                 "y":1087
+                }, 
+               
+                {
+                 "gid":31,
+                 "height":200,
+                 "id":5,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"float"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":512,
+                 "y":1087
+                }, 
+                {
+                 "gid":31,
+                 "height":200,
+                 "id":7,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"float"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":768,
+                 "y":1087
+                }, 
+                {
+                 "gid":31,
+                 "height":200,
+                 "id":9,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"float"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":992,
+                 "y":1087
+                }
+               
+               ],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":80,
+         "x":0,
+         "y":0
+        }, 
+
+
+        
+       
+       
+        {
+         "draworder":"topdown",
+         "height":40,
+         "name":"game",
+         "objects":[
+                {
+                 "gid":22,
+                 "height":160,
+                 "id":58,
+                 "name":"hero",
+                 "rotation":0,
+                 "type":"hero",
+                 "visible":true,
+                 "width":128,
+                 "x":45,
+                 "y":979.5
+                }
+             ],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":80,
+         "x":0,
+         "y":0
+        }
+
+
+      
+       ],
+
+       
+ "nextobjectid":206,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tileheight":32,
+ "tilesets":[
+        {
+         "columns":0,
+         "firstgid":1,
+         "margin":0,
+         "name":"objs",
+         "spacing":0,
+         "tilecount":62,
+         "tileheight":332,
+         "tiles":
+            {
+            
+             "21":
+                {
+                 "image":"hero.png"
+                },
+           
+           
+           
+            
+          
+             
+            
+             "30":
+                {
+                 "image":"platformBase2.png"
+                }
+           
+           
+            },
+            "tilewidth":384
+            }],
+ "tilewidth":32,
+ "version":1,
+ "width":79
+}
