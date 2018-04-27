@@ -14,7 +14,7 @@ local scene = composer.newScene()
 
 function scene:create( event )
 
---
+
 
 	local sceneGroup = self.view 
   
@@ -35,13 +35,21 @@ function scene:create( event )
 	map.extensions = "scene.game.lib."
 	map:extend( "hero" )
     hero = map:findObject( "hero" )
-    hero.filename = filename
+	hero.filename = filename
+	
+	sceneGroup:insert( map )
 end
 
 local function enterFrame( event )
 
 	local elapsed = event.time
 
+	--чтобы персонаж был в центре и при его движении скролилас карта
+	if hero and hero.x and hero.y and not hero.isDead then
+		local x, y = hero:localToContent( 0, 0 )
+		x, y = display.contentCenterX - x, display.contentCenterY - y
+		map.x, map.y = map.x + x, map.y + y		
+	end
 end
 
 
@@ -50,7 +58,7 @@ function scene:show( event )
 	local phase = event.phase
 	if ( phase == "will" ) then
 		fx.fadeIn()
-	
+		Runtime:addEventListener( "enterFrame", enterFrame )
 		Runtime:addEventListener( "enterFrame", enterFrame )
 	elseif ( phase == "did" ) then
 		

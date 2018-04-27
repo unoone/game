@@ -1,206 +1,472 @@
-{ "backgroundcolor":"#ffffff",
+{ "backgroundcolor":"#aaffff",
  "height":45,
+ "infinite":false,
  "layers":[
-       
-        
         {
          "draworder":"topdown",
-         "height":40,
-         "name":"ground",
+         "name":"background",
          "objects":[
                 {
-                 "gid":31,
-                 "height":250,
-                 "id":2,
+                 "gid":12,
+                 "height":218,
+                 "id":16,
                  "name":"",
-                 "properties":
-                    {
-                     "bodyType":"static",
-                     "friction":1
-                    },
-                 "propertytypes":
-                    {
-                     "bodyType":"string",
-                     "friction":"float"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":256,
-                 "x":0,
-                 "y":1087
+                 "width":2527.33333333333,
+                 "x":1.39393939393933,
+                 "y":1440.36363636364
                 }, 
                 {
-                 "gid":31,
-                 "height":200,
-                 "id":3,
+                 "gid":12,
+                 "height":101,
+                 "id":18,
                  "name":"",
-                 "properties":
-                    {
-                     "bodyType":"static",
-                     "friction":1
-                    },
-                 "propertytypes":
-                    {
-                     "bodyType":"string",
-                     "friction":"float"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":256,
-                 "x":256,
-                 "y":1087
-                }, 
-               
-                {
-                 "gid":31,
-                 "height":200,
-                 "id":5,
-                 "name":"",
-                 "properties":
-                    {
-                     "bodyType":"static",
-                     "friction":1
-                    },
-                 "propertytypes":
-                    {
-                     "bodyType":"string",
-                     "friction":"float"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":256,
-                 "x":512,
-                 "y":1087
+                 "width":264,
+                 "x":236,
+                 "y":1082
                 }, 
                 {
-                 "gid":31,
-                 "height":200,
-                 "id":7,
+                 "gid":12,
+                 "height":218,
+                 "id":45,
                  "name":"",
-                 "properties":
-                    {
-                     "bodyType":"static",
-                     "friction":1
-                    },
-                 "propertytypes":
-                    {
-                     "bodyType":"string",
-                     "friction":"float"
-                    },
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":256,
-                 "x":768,
-                 "y":1087
-                }, 
-                {
-                 "gid":31,
-                 "height":200,
-                 "id":9,
-                 "name":"",
-                 "properties":
-                    {
-                     "bodyType":"static",
-                     "friction":1
-                    },
-                 "propertytypes":
-                    {
-                     "bodyType":"string",
-                     "friction":"float"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":256,
-                 "x":992,
-                 "y":1087
-                }
-               
-               ],
+                 "width":2528.66666666667,
+                 "x":0.424242424242482,
+                 "y":1295.27272727273
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":80,
          "x":0,
          "y":0
         }, 
-
-
-        
-       
-       
         {
          "draworder":"topdown",
-         "height":40,
+         "name":"ground",
+         "objects":[
+                {
+                 "gid":1,
+                 "height":64,
+                 "id":28,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":240,
+                 "x":-2,
+                 "y":1107.33333333333
+                }, 
+                {
+                 "gid":2,
+                 "height":64,
+                 "id":32,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":346,
+                 "x":500,
+                 "y":1114
+                }, 
+                {
+                 "gid":2,
+                 "height":64,
+                 "id":34,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":346,
+                 "x":844,
+                 "y":1115.33333333333
+                }, 
+                {
+                 "gid":2,
+                 "height":64,
+                 "id":35,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":346,
+                 "x":1190,
+                 "y":1116.66666666667
+                }, 
+                {
+                 "gid":1,
+                 "height":64,
+                 "id":37,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":350,
+                 "x":1536,
+                 "y":1116.66666666667
+                }, 
+                {
+                 "gid":1,
+                 "height":64,
+                 "id":40,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":296.666666666667,
+                 "x":2232.66666666667,
+                 "y":1116
+                }, 
+                {
+                 "gid":1,
+                 "height":64,
+                 "id":41,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":350,
+                 "x":1884,
+                 "y":1116
+                }, 
+                {
+                 "gid":2,
+                 "height":78,
+                 "id":30,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static",
+                     "floating":true,
+                     "friction":1
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string",
+                     "floating":"bool",
+                     "friction":"int"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":266,
+                 "x":236,
+                 "y":1038
+                }],
+         "opacity":1,
+         "properties":
+            {
+             "bodyType":"static"
+            },
+         "propertytypes":
+            {
+             "bodyType":"string"
+            },
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "name":"shading",
+         "objects":[
+                {
+                 "height":157.666666666667,
+                 "id":43,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static"
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":239.333333333333,
+                 "y":962.833333333333
+                }, 
+                {
+                 "height":151,
+                 "id":44,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static"
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":20,
+                 "x":478,
+                 "y":962.5
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":false,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "name":"game",
          "objects":[
                 {
-                 "gid":22,
-                 "height":160,
-                 "id":58,
+                 "gid":14,
+                 "height":263,
+                 "id":21,
                  "name":"hero",
                  "rotation":0,
                  "type":"hero",
                  "visible":true,
-                 "width":128,
-                 "x":45,
-                 "y":979.5
-                }
-             ],
+                 "width":192,
+                 "x":14,
+                 "y":1037
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":80,
          "x":0,
          "y":0
-        }
-
-
-      
-       ],
-
-       
- "nextobjectid":206,
+        }, 
+        {
+         "draworder":"topdown",
+         "name":"bounds",
+         "objects":[
+                {
+                 "height":1214,
+                 "id":23,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static"
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":32,
+                 "x":2,
+                 "y":2
+                }, 
+                {
+                 "height":1212,
+                 "id":24,
+                 "name":"",
+                 "properties":
+                    {
+                     "bodyType":"static"
+                    },
+                 "propertytypes":
+                    {
+                     "bodyType":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":false,
+                 "width":30,
+                 "x":2494,
+                 "y":4
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":false,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":46,
  "orientation":"orthogonal",
- "renderorder":"right-down",
+ "renderorder":"left-up",
+ "tiledversion":"1.1.5",
  "tileheight":32,
  "tilesets":[
         {
          "columns":0,
          "firstgid":1,
+         "grid":
+            {
+             "height":1,
+             "orientation":"orthogonal",
+             "width":1
+            },
          "margin":0,
-         "name":"objs",
+         "name":"tiles",
          "spacing":0,
-         "tilecount":62,
-         "tileheight":332,
+         "tilecount":13,
+         "tileheight":263,
          "tiles":
             {
-            
-             "21":
+             "0":
                 {
-                 "image":"hero.png"
+                 "image":"platform2.png",
+                 "imageheight":64,
+                 "imagewidth":192
                 },
-           
-           
-           
-            
-          
-             
-            
-             "30":
+             "1":
                 {
-                 "image":"platformBase2.png"
+                 "image":"platform1.png",
+                 "imageheight":64,
+                 "imagewidth":192
+                },
+             "10":
+                {
+                 "image":"shadow.png",
+                 "imageheight":64,
+                 "imagewidth":64
+                },
+             "11":
+                {
+                 "image":"earthWall.png",
+                 "imageheight":64,
+                 "imagewidth":64
+                },
+             "12":
+                {
+                 "image":"earthWall2.png",
+                 "imageheight":64,
+                 "imagewidth":64
+                },
+             "13":
+                {
+                 "image":"hero.png",
+                 "imageheight":263,
+                 "imagewidth":192
+                },
+             "2":
+                {
+                 "image":"backgroundArch.png",
+                 "imageheight":115,
+                 "imagewidth":135
+                },
+             "3":
+                {
+                 "image":"backgroundMountain.png",
+                 "imageheight":140,
+                 "imagewidth":380
+                },
+             "4":
+                {
+                 "image":"pushBlock1.png",
+                 "imageheight":96,
+                 "imagewidth":96
+                },
+             "5":
+                {
+                 "image":"pushBlock2.png",
+                 "imageheight":96,
+                 "imagewidth":96
+                },
+             "7":
+                {
+                 "image":"blue.png",
+                 "imageheight":64,
+                 "imagewidth":64
+                },
+             "8":
+                {
+                 "image":"castleWall.png",
+                 "imageheight":64,
+                 "imagewidth":64
+                },
+             "9":
+                {
+                 "image":"grey.png",
+                 "imageheight":64,
+                 "imagewidth":64
                 }
-           
-           
             },
-            "tilewidth":384
-            }],
+         "tilewidth":380
+        }],
  "tilewidth":32,
+ "type":"map",
  "version":1,
  "width":79
 }

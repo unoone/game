@@ -72,9 +72,7 @@ function scene:show( event )
 		Runtime:addEventListener( "enterFrame", enterFrame )
 	elseif ( phase == "did" ) then
 		start:addEventListener( "tap" )
-		timer.performWithDelay( 10, function()
 		
-		end)	
 	end
 end
 
