@@ -1,52 +1,54 @@
-
--- Project: vjoy 0.3
---
--- A virtual joystick and button system that emulates
--- an xBox controller axis/button events
-
 local M = {}
 local stage = display.getCurrentStage()
 
-function M.newButton(key, radius)
-
+function M.newButton(radius, key, direction)
+print("nfdnf")
+  direction = direction or ""
   local instance
   radius = radius or 64
   key = key or "buttonA"
-
+  print("init")
   if type(radius) == "number" then
-    instance = display.newCircle(0,0, radius)
-    instance:setFillColor( 0.2, 0.2, 0.2, 0.9 )
-    instance.strokeWidth = 6
-    instance:setStrokeColor( 1, 1, 1, 1 )
+    if  "left" == direction then 
+      instance = display.newImageRect("scene/game/img/left.png",100,100)
+      print("true")
+      else
+        instance = display.newCircle(0,0, radius)
+        instance:setFillColor( 0.2, 0.2, 0.2, 0.9 )
+        instance.strokeWidth = 6
+        instance:setStrokeColor( 1, 1, 1, 1 )
+
+      end
   else
-    instance = display.newImage( instance, radius, 0,0 )
+    instance = display.newImage( radius, 0,0 )
   end
 
   function instance:touch(event)
     local phase = event.phase
     if phase=="began" then
       if event.id then stage:setFocus(event.target, event.id) end
-      self.xScale, self.yScale = 0.95, 0.95
+      instance._xScale, instance._yScale = instance.xScale, instance.yScale
+      instance.xScale, instance.yScale = instance.xScale * 0.95, instance.yScale * 0.95
       local keyEvent = {name = "key", phase = "down", keyName = key or "none"}
       Runtime:dispatchEvent(keyEvent)
     elseif phase=="ended" or phase == "canceled" then
       if event.id then stage:setFocus(nil, event.id) end
-      self.xScale, self.yScale = 1, 1
+      instance.xScale, instance.yScale = instance._xScale, instance._yScale
       local keyEvent = {name = "key", phase = "up", keyName = key or "none"}
       Runtime:dispatchEvent(keyEvent)
     end
     return true
   end
 
-  function instance.activate()
-    instance:addEventListener("touch")
+  function instance:activate()
+    self:addEventListener("touch")
   end
 
-  function instance.deactivate()
-    instance:removeEventListener("touch")
+  function instance:deactivate()
+    self:removeEventListener("touch")
   end
 
-  instance.activate()
+  instance:activate()
   return instance
 end
 
@@ -84,7 +86,7 @@ function M.newStick(startAxis, innerRadius, outerRadius)
   function joystick:touch(event)
     local phase = event.phase
     if phase=="began" or (phase=="moved" and self.isFocus) then
-      if phase == "began" then
+      if phase == "began" or phase=="moved" then
         stage:setFocus(event.target, event.id)
         self.eventID = event.id
         self.isFocus = true

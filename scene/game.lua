@@ -33,10 +33,15 @@ function scene:create( event )
     
     
 	map.extensions = "scene.game.lib."
-	map:extend( "hero" )
-    hero = map:findObject( "hero" )
+	--ищем гг
+	map:extend( "hero" )--прикрепляет модуль кода lua к объекту изображения(ищет в папке scene.game.lib. моудуль hero.lua и прикрепляет этот код к нашему объекту (в sandbox.json) c типом hero )
+    hero = map:findObject( "hero" ) --ищет объект с именем hero 
 	hero.filename = filename
 	
+   --добавляем код для нашей лестницы
+   map:extend("ladder")
+
+
 	sceneGroup:insert( map )
 end
 
